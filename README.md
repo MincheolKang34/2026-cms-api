@@ -68,8 +68,11 @@ gradlew.bat clean test
 
 ### 3-1. 로그인 기능
 
-- `POST /api/auth/login` API를 통해 사용자 인증을 수행하도록 구현했습니다.
-- Spring Security 기반으로 인증을 적용했습니다.
+본 과제에서는 **Spring Security 기반의 HTTP Basic 인증 방식**을 사용했습니다.
+
+- 로그인 확인용 API: `POST /api/auth/login`
+- 콘텐츠 API 요청 시에는 HTTP Basic 인증 정보를 함께 전달해야 합니다.
+- 테스트 및 검증은 기본 계정(`admin`, `user1`)을 이용해 수행했습니다.
 - 기본 사용자 권한은 `ADMIN`, `USER` 두 가지로 구성했습니다.
 
 ### 3-2. 콘텐츠 CRUD
